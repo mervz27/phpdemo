@@ -6,7 +6,10 @@
     <title>PHP DEMO</title>
 </head>
 <body>
-    <form action="output.php" method="GET">
+    
+    <p style="background-color: red;color: aliceblue"><?php echo $_GET["error"]; ?></p>
+    <p style="background-color: green;color: aliceblue">REGISTRATION SUCCESSFUL</p>
+    <form action="output.php" method="POST">
         <div>
             <label for="username">Username</label>
             <input type="text" name="username" id="username">

@@ -36,6 +36,14 @@
             echo "field confirm_password is empty<br>";
         }
         
+        if($password == $confirm_password){
+            header("location: demo1.php?success=REGISTRATION SUCCESSFUL");
+            exit;
+        } else {
+            header("location: demo1.php?error=PASSWORD MISMATCH");
+            exit;
+        }
+
         //echo "USER username is ". $username ;
 
         //func caller
